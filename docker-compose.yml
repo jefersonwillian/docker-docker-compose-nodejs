@@ -2,7 +2,9 @@ version: "3"
 
 services:
   app:
-    build: .
+    build:
+      context: .
+      dockerfile: dockerFile
     command: npm start
     ports:
       - "3000:3000"
